@@ -1,0 +1,30 @@
+@mixin bg_img_props($bg-size: cover, $bg-position: center, $bg-repeat: no-repeat) {
+    background-size: $bg-size;
+    background-position: $bg-position;
+    background-repeat: $bg-repeat;    
+}
+@mixin bg_img_container { /* Fills its parent container */
+    @include no_space;
+    @include fill_parent;
+    position: relative;
+    display: block;
+}
+@mixin bg_img($bg-size: cover, $bg-position: center, $bg-repeat: no-repeat) {
+    @include bg_img_props($bg-size, $bg-position, $bg-repeat);
+    @include bg_img_container;
+}
+
+
+
+@mixin full_screen_video { 
+    @include translate_xy(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,34 @@
+@mixin no_space {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin fill_parent {
+    height: 100%;
+    width: 100%;
+}
+
+@mixin empty_content {
+    content: " ";
+    display: table;
+}
+
+@mixin appearance_type($type: none) { /* normal|icon|window|button|menu|field */
+    -webkit-appearance: $type;
+       -moz-appearance: $type;
+        -ms-appearance: $type;
+         -o-appearance: $type;
+            appearance: $type;    
+}
+
+@mixin clearfix {
+    clear: both;
+
+    &:before,
+    &:after {
+        @include empty_content;        
+    }
+    &:after {
+        clear: both;
+    } 
+}

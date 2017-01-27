@@ -1,0 +1,25 @@
+/* Waves */
+/* ----- */
+
+@-webkit-keyframes waves {
+	0% {
+		@include translate_y(0px);
+	}
+	50% {
+		@include translate_y(50px);
+	}
+	100% {
+		@include translate_y(0px);
+	}
+}
+@keyframes waves {
+	0% {
+		@include translate_y(0px);
+	}
+	50% {
+		@include translate_y(50px);
+	}
+	100% {
+		@include translate_y(0px);
+	}
+}

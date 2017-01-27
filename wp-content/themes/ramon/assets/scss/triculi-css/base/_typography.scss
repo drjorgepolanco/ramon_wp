@@ -1,0 +1,56 @@
+@mixin font_size($px, $rem) {
+    font-size: #{$px}px;
+    font-size: #{$rem}rem;
+}
+
+
+
+html { 
+    font-size: 62.5%; 
+
+    @media only screen and (min-width: 768px) {
+        font-size: 71.875%;
+    }
+    @media only screen and (min-width: 1440px) {
+        font-size: 81.25%;
+    }
+}
+body {
+    @include font_size(16, 1.6);
+    font-weight: 400;
+    color: #444444;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 { 
+    font-weight: 700; 
+}
+h1 {
+    @include font_size(32, 3.2);
+}
+h2 {
+    @include font_size(28, 2.8);
+}
+h3 {
+     @include font_size(24, 2.4);
+}
+h4 {
+     @include font_size(20, 2.0);
+}
+h5 {
+     @include font_size(16, 1.6);
+}
+
+
+
+p {
+    @include font_size(16, 1.6);
+    font-weight: 300;
+}
+ul {
+    @include no_space;
+    list-style: none;
+}

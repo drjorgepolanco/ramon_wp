@@ -1,0 +1,29 @@
+/* Placeholders */
+/* ============ */
+
+/* Basic properties for <a> */
+%simple-link {
+	height: 100%;
+	width: 100%;
+	display: block;
+	transition: all $transition-speed;
+}
+
+/* Basic properties for bg images in Hero Sections */
+%bg-img-container {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* Center images in container */
+%center-img {
+	display: block;
+	margin: 0 auto;
+}

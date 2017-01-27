@@ -1,0 +1,38 @@
+.clearfix { 
+    @include clearfix;
+}
+.hide { 
+    display: none;      
+}
+.invisible { 
+    visibility: hidden; 
+}
+.antialiased {
+    /* make the copy very thin and smooth */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.replace-img {
+    /* Replaces text with a background image */
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+/* Show only for mobile or only for desktop */
+.for-mobile {
+    display: block !important;
+}
+.for-desktop {
+    display: none !important;
+}
+@media only screen and (min-width: 1024px) {
+
+    .for-mobile {
+        display: none !important;
+    }
+
+    .for-desktop {
+        display: block !important;
+    }
+}

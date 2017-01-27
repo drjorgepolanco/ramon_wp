@@ -1,0 +1,52 @@
+/* Base Properties */
+/* =============== */
+
+/* Core HTML */
+/* --------- */
+
+body {
+	background-color: white;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+}
+
+/* Text */
+/* ---- */
+
+.mu-highlight {
+	color: $mu-green;
+}
+.mu-bold {
+	font-weight: bold !important;
+}
+
+/* Trademark */
+/* --------- */
+
+.mu-tm {
+	font-size: 12px;
+	position: relative;
+	top: -10px;
+}
+.mu-hero-slide-pretitle .mu-tm {
+	top: -6px;
+}
+// .mu-hero-slide-title .mu-tm {
+// 	top: -42px;
+// }
+.mu-bas .mu-tm {
+	top: -20px;
+}
+
+/* General Classes */
+/* --------------- */
+
+.mu-video {
+	width: 100%;
+}
+.mu-no-border {
+	border: none !important;
+}

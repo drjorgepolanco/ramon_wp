@@ -7,7 +7,7 @@
  * @package ramon
  */
 
-if ( ! function_exists( 'ramon_setup' ) ) :
+if ( ! function_exists( 'ramon_setup' ) ):
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -22,7 +22,7 @@ function ramon_setup() {
 	 * If you're building a theme based on ramon, use a find and replace
 	 * to change 'ramon' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'ramon', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'ramon',get_template_directory().'/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -43,8 +43,9 @@ function ramon_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'ramon' ),
+	register_nav_menus(array(
+		'primary'   => esc_html__( 'Primary', 'ramon' ),
+		'secondary' => esc_html__( 'Secondary', 'ramon' ),
 	) );
 
 	/*
@@ -103,10 +104,9 @@ add_action( 'widgets_init', 'ramon_widgets_init' );
  */
 function ramon_scripts() {
 	wp_enqueue_style( 'ramon-style', get_stylesheet_uri() );
-
-	wp_enqueue_script( 'ramon-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'ramon-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'ramon-navigation', get_template_directory_uri() . '/assets/js/underscores/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'ramon-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/underscores/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'ramon-main-js', get_template_directory_uri() . '/assets/js/main.js', array(), '', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -114,27 +114,28 @@ function ramon_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ramon_scripts' );
 
-/**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
+/* Remove default top margin from html tag */
+/* ======================================= */
+add_action( 'get_header', 'remove_admin_login_header' );
+function remove_admin_login_header() {
+    remove_action( 'wp_head', '_admin_bar_bump_cb' );
+}
 
-/**
- * Custom template tags for this theme.
- */
-require get_template_directory() . '/inc/template-tags.php';
+/* Add active class to current navigation link */
+/* =========================================== */
+add_filter( 'nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+function special_nav_class( $classes, $item ) {
+    if (in_array( 'current-menu-item', $classes ) ){
+        $classes[] = 'active ';
+    }
+    return $classes;
+}
 
-/**
- * Custom functions that act independently of the theme templates.
- */
-require get_template_directory() . '/inc/extras.php';
+/* Remove 'No Term' on Radio Button for Taxonomies */
+/* =============================================== */
+// add_filter( 'radio-buttons-for-taxonomies-no-term-taxonomy_name', '__return_FALSE' );
 
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
 
-/**
- * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/inc/jetpack.php';
+/* Initialize all the things */
+/* ========================= */
+require get_stylesheet_directory() . '/inc/init.php';

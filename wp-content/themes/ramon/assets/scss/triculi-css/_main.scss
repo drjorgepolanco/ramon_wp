@@ -1,0 +1,38 @@
+/*\
+ *
+ * triculi v1.0 | NO LICENSE - FREE | github.com/drjorgepolanco
+ * Jan 14, 2017
+ *
+\*/
+
+
+@import 'mixins/container';
+@import 'mixins/transform';
+@import 'mixins/media';
+@import 'mixins/spacing';
+@import 'mixins/positioning';
+@import 'mixins/device';
+
+
+
+@import 'base/typography';
+@import 'base/tags';
+
+
+
+@import 'classes/container';
+@import 'classes/spacing';
+@import 'classes/positioning';
+@import 'classes/structure';
+
+
+// Import only the ones you need
+@import 'devices/phone';                //  320px
+@import 'devices/phablet';              //  414px
+@import 'devices/tablet-portrait';      //  768px
+@import 'devices/tablet-landscape';     // 1024px
+@import 'devices/laptop';               // 1280px
+@import 'devices/laptop-wide';          // 1366px
+@import 'devices/desktop';              // 1440px
+@import 'devices/hd';                   // 1920px
+@import 'devices/retina';               // 2560px

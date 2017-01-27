@@ -1,0 +1,148 @@
+@mixin device($type) {
+
+    .#{$type}-push-0 {
+        @include push(0);
+    }
+    .#{$type}-pull-0 {
+        @include pull(0);
+    }
+    .#{$type}-push-1 {
+        @include push(8.33333%);
+    }
+    .#{$type}-pull-1 {
+        @include pull(8.33333%);
+    }
+    .#{$type}-push-2 {
+        @include push(16.66667%);
+    }
+    .#{$type}-pull-2 {
+        @include pull(16.66667%);
+    }
+    .#{$type}-push-3 {
+        @include push(25%);
+    }
+    .#{$type}-pull-3 {
+        @include pull(25%);
+    }
+    .#{$type}-push-4 {
+        @include push(33.33333%);
+    }
+    .#{$type}-pull-4 {
+        @include pull(33.33333%);
+    }
+    .#{$type}-push-5 {
+        @include push(41.66667%);
+    }
+    .#{$type}-pull-5 {
+        @include pull(41.66667%);
+    }
+    .#{$type}-push-6 {
+        @include push(50%);
+    }
+    .#{$type}-pull-6 {
+        @include pull(50%);
+    }
+    .#{$type}-push-7 {
+        @include push(58.33333%);
+    }
+    .#{$type}-pull-7 {
+        @include pull(58.33333%);
+    }
+    .#{$type}-push-8 {
+        @include push(66.66667%);
+    }
+    .#{$type}-pull-8 {
+        @include pull(66.66667%);
+    }
+    .#{$type}-push-9 {
+        @include push(75%);
+    }
+    .#{$type}-pull-9 {
+        @include pull(75%);
+    }
+    .#{$type}-push-10 {
+        @include push(83.33333%);
+    }
+    .#{$type}-pull-10 {
+        @include pull(33.33333%);
+    }
+    .#{$type}-push-11 {
+        @include push(91.66667%);
+    }
+    .#{$type}-pull-11 {
+        @include pull(91.66667%);
+    }
+    .col {
+        @include padding_x(16px);
+        position: relative;
+        float: left;
+
+        &.#{$type}-centered {
+            @include margin_x(0);
+            float: none;
+
+            &:last-child {
+                float: none;
+            }
+        }
+        &.#{$type}-uncentered {
+            @include margin_x(0);
+            float: left;
+
+            &:last-child {
+                float: left;
+            }
+            *.opposite { 
+                float: right; 
+            } 
+        }
+    }
+    .#{$type}-1  { width: 8.33333%;  }
+    .#{$type}-2  { width: 16.66667%; }
+    .#{$type}-3  { width: 25%;       }
+    .#{$type}-4  { width: 33.33333%; }
+    .#{$type}-5  { width: 41.66667%; }
+    .#{$type}-6  { width: 50%;       }
+    .#{$type}-7  { width: 58.33333%; }
+    .#{$type}-8  { width: 66.66667%; }
+    .#{$type}-9  { width: 75%;       }
+    .#{$type}-10 { width: 83.33333%; }
+    .#{$type}-11 { width: 91.66667%; }
+    .#{$type}-12 { width: 100%;      }
+
+    .#{$type}-offset-0  { margin-left: 0         !important; }
+    .#{$type}-offset-1  { margin-left: 8.33333%  !important; }
+    .#{$type}-offset-2  { margin-left: 16.66667% !important; }
+    .#{$type}-offset-3  { margin-left: 25%       !important; }
+    .#{$type}-offset-4  { margin-left: 33.33333% !important; }
+    .#{$type}-offset-5  { margin-left: 41.66667% !important; }
+    .#{$type}-offset-6  { margin-left: 50%       !important; }
+    .#{$type}-offset-7  { margin-left: 58.33333% !important; }
+    .#{$type}-offset-8  { margin-left: 66.66667% !important; }
+    .#{$type}-offset-9  { margin-left: 75%       !important; }
+    .#{$type}-offset-10 { margin-left: 83.33333% !important; }
+    .#{$type}-offset-11 { margin-left: 91.66667% !important; }
+
+    .#{$type}-reset-order {
+        @include margin_x(0);
+        float: left;
+        left: auto;
+        right: auto;
+    }
+
+    .row {
+
+        &.#{$type}-collapse {
+            > .col {
+                @include padding_x(0);
+            }
+            .row {
+                @include margin_x(0);
+            }
+        }
+        &.#{$type}-uncollapse > .col {
+            @include padding_x(16px);
+            float: left;
+        }
+    }
+}

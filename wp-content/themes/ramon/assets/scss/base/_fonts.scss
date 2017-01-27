@@ -1,0 +1,138 @@
+/* Fonts */
+/* ===== */
+
+/* Bodoni */
+@font-face {
+    font-family: 'Bodoni Extra Bold';
+    font-weight: 900;
+    font-style: normal;
+    src: url('./assets/fonts/bodoni/bodoni_egyptian_pro-extra_bold-webfont.eot');
+    src: url('./assets/fonts/bodoni/bodoni_egyptian_pro-extra_bold-webfont.eot?#iefix')                     format('embedded-opentype'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-extra_bold-webfont.woff2')                          format('woff2'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-extra_bold-webfont.woff')                           format('woff'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-extra_bold-webfont.ttf')                            format('truetype'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-extra_bold-webfont.svg#bodoni_egyptian_proextbold') format('svg');
+}
+@font-face {
+    font-family: 'Bodoni Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: url('./assets/fonts/bodoni/bodoni_egyptian_pro-bold-webfont.eot');
+    src: url('./assets/fonts/bodoni/bodoni_egyptian_pro-bold-webfont.eot?#iefix')                  format('embedded-opentype'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-bold-webfont.woff2')                       format('woff2'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-bold-webfont.woff')                        format('woff'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-bold-webfont.ttf')                         format('truetype'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-bold-webfont.svg#bodoni_egyptian_probold') format('svg');
+}
+@font-face {
+    font-family: 'Bodoni Regular Italic';
+    font-weight: 400;
+    font-style: italic;
+    src: url('./assets/fonts/bodoni/bodoni_egyptian_pro-regular_italic-webfont.eot');
+    src: url('./assets/fonts/bodoni/bodoni_egyptian_pro-regular_italic-webfont.eot?#iefix')                        format('embedded-opentype'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-regular_italic-webfont.woff2')                             format('woff2'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-regular_italic-webfont.woff')                              format('woff'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-regular_italic-webfont.ttf')                               format('truetype'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-regular_italic-webfont.svg#bodoni_egyptian_proregularita') format('svg');
+}
+@font-face {
+    font-family: 'Bodoni Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./assets/fonts/bodoni/bodoni_egyptian_pro-regular-webfont.eot');
+    src: url('./assets/fonts/bodoni/bodoni_egyptian_pro-regular-webfont.eot?#iefix')                        format('embedded-opentype'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-regular-webfont.woff2')                             format('woff2'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-regular-webfont.woff')                              format('woff'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-regular-webfont.ttf')                               format('truetype'),  
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-regular-webfont.svg#bodoni_egyptian_pro_regularRg') format('svg');
+}
+@font-face {
+    font-family: 'Bodoni Black';
+    font-weight: 800;
+    font-style: normal;
+    src: url('./assets/fonts/bodoni/bodoni_egyptian_pro-black-webfont.eot');
+    src: url('./assets/fonts/bodoni/bodoni_egyptian_pro-black-webfont.eot?#iefix')                   format('embedded-opentype'),
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-black-webfont.woff2')                        format('woff2'),
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-black-webfont.woff')                         format('woff'),
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-black-webfont.ttf')                          format('truetype'),
+         url('./assets/fonts/bodoni/bodoni_egyptian_pro-black-webfont.svg#bodoni_egyptian_problack') format('svg');
+
+}
+
+/* Lato */
+@font-face {
+    font-family: 'Lato Hairline';
+    src: url('./assets/fonts/lato/lato-hairline.eot');
+    src: url('./assets/fonts/lato/lato-hairline.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/fonts/lato/lato-hairline.woff')       format('woff'), 
+         url('./assets/fonts/lato/lato-hairline.ttf')        format('truetype'),
+         url('./assets/fonts/lato/lato-hairline.otf')        format('opentype');
+}
+@font-face {
+    font-family: 'Lato Light';
+    src: url('./assets/fonts/lato/lato-light.eot');
+    src: url('./assets/fonts/lato/lato-light.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/fonts/lato/lato-light.woff')       format('woff'), 
+         url('./assets/fonts/lato/lato-light.ttf')        format('truetype'),
+         url('./assets/fonts/lato/lato-light.otf')        format('opentype');
+}
+
+/* Rockwell */
+@font-face {
+    font-family: 'Rockwell Regular Italic';
+    font-style: italic;
+    font-weight: normal;
+    src: url('./assets/fonts/rockwell/rockwell-std-italic.eot');
+    src: url('./assets/fonts/rockwell/rockwell-std-italic.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/fonts/rockwell/rockwell-std-italic.woff')       format('woff'), 
+         url('./assets/fonts/rockwell/rockwell-std-italic.ttf')        format('truetype'),
+         url('./assets/fonts/rockwell/rockwell-std-italic.otf')        format('opentype');
+}
+@font-face {
+    font-family: 'Rockwell Light Italic';
+    font-style: italic;
+    font-weight: 100;
+    src: url('./assets/fonts/rockwell/rockwell-std-light-italic.eot');
+    src: url('./assets/fonts/rockwell/rockwell-std-light-italic.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/fonts/rockwell/rockwell-std-light-italic.woff')       format('woff'), 
+         url('./assets/fonts/rockwell/rockwell-std-light-italic.ttf')        format('truetype'),
+         url('./assets/fonts/rockwell/rockwell-std-light-italic.otf')        format('opentype');
+}
+@font-face {
+    font-family: 'Rockwell Regular';
+    font-weight: normal;
+    src: url('./assets/fonts/rockwell/rockwell-std.eot');
+    src: url('./assets/fonts/rockwell/rockwell-std.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/fonts/rockwell/rockwell-std.woff')       format('woff'), 
+         url('./assets/fonts/rockwell/rockwell-std.ttf')        format('truetype'),
+         url('./assets/fonts/rockwell/rockwell-std.otf')        format('opentype');
+}
+@font-face {
+    font-family: 'Rockwell Light';
+    font-weight: 100;
+    src: url('./assets/fonts/rockwell/rockwell-std-light.eot');
+    src: url('./assets/fonts/rockwell/rockwell-std-light.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/fonts/rockwell/rockwell-std-light.woff')       format('woff'), 
+         url('./assets/fonts/rockwell/rockwell-std-light.ttf')        format('truetype'),
+         url('./assets/fonts/rockwell/rockwell-std-light.otf')        format('opentype');
+}
+@font-face {
+    font-family: 'Rockwell Extra Bold';
+    font-weight: 900;
+    src: url('./assets/fonts/rockwell/rockwell-std-extra-bold.eot');
+    src: url('./assets/fonts/rockwell/rockwell-std-extra-bold.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/fonts/rockwell/rockwell-std-extra-bold.woff')       format('woff'), 
+         url('./assets/fonts/rockwell/rockwell-std-extra-bold.ttf')        format('truetype'),
+         url('./assets/fonts/rockwell/rockwell-std-extra-bold.otf')        format('opentype');
+}
+
+/* Museo */
+@font-face {
+    font-family: 'Museo';
+    font-weight: 400;
+    src: url('./assets/fonts/museo-sans/museo-sans-300.eot');
+    src: url('./assets/fonts/museo-sans/museo-sans-300.eot?#iefix') format('embedded-opentype'), 
+         url('./assets/fonts/museo-sans/museo-sans-300.woff')       format('woff'), 
+         url('./assets/fonts/museo-sans/museo-sans-300.ttf')        format('truetype'),
+         url('./assets/fonts/museo-sans/museo-sans-300.otf')        format('opentype');
+}

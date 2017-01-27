@@ -1,0 +1,64 @@
+/*
+	Theme Name: Muuna Theme
+	Theme URI: http://underscores.me/
+	Author: OffWhite, Co.
+	Author URI: http://www.offwhitedesign.com
+	Description: Custom Wordpress Theme for Muuna Inc, by OffWhite, Co.
+	Version: 1.0.0
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Text Domain: mhc-theme
+	Tags:
+
+	This theme, like WordPress, is licensed under the GPL.
+	Use it to make something cool, have fun, and share what you've learned with others.
+
+	MHC Theme is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+	Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+	Normalizing styles have been helped along thanks to the fine work of
+	Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/* Vendors */
+@import 'vendor/font-awesome';
+@import 'vendor/normalize';
+@import 'vendor/triculi/main';
+
+/* Base */
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/placeholders';
+@import 'base/base';
+@import 'base/animations';
+@import 'base/colors';
+
+/* Global */
+@import 'global/social-links';
+@import 'global/header';
+@import 'global/footer';
+@import 'global/404';
+
+/* Components */
+@import 'components/article';
+@import 'components/basic-section';
+@import 'components/engage-links';
+@import 'components/hero';
+@import 'components/hero-callouts';
+@import 'components/img-gallery';
+@import 'components/img-slider';
+@import 'components/product-thumbs';
+@import 'components/sidebar';
+
+/* Pages */
+@import 'pages/products';
+@import 'pages/product-detail';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/events';
+@import 'pages/faq';
+@import 'pages/legal';
+@import 'pages/find-us';
+@import 'pages/coupons';
+@import 'pages/video';

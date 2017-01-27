@@ -1,0 +1,23 @@
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+        -ms-transform: rotate($deg);
+            transform: rotate($deg);
+}
+
+
+
+@mixin translate_x($value) {
+    -webkit-transform: translateX($value);
+        -ms-transform: translateX($value);
+            transform: translateX($value);
+}
+@mixin translate_y($value) {
+    -webkit-transform: translateY($value);
+        -ms-transform: translateY($value);
+            transform: translateY($value);
+}
+@mixin translate_xy($x, $y) {
+    -webkit-transform: translate($x, $y);
+        -ms-transform: translate($x, $y);
+            transform: translate($x, $y);
+}

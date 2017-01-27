@@ -1,0 +1,40 @@
+/* Text */
+.text-center { 
+    text-align: center; 
+}
+.text-right { 
+    text-align: right; 
+}
+.text-left  { 
+    text-align: left; 
+}
+
+
+/* Image */
+.img-center {
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* Float */
+.float-left { 
+    float: left  !important; 
+}
+.float-right { 
+    float: right !important; 
+}
+
+
+/* Position */
+.position-left { 
+    left: 0; 
+}
+.position-right { 
+    right: 0; 
+}
+.position-center-y {
+    @include translate_y(-50%);
+    position: absolute !important;
+    top: 50%;
+}

@@ -1,0 +1,100 @@
+@mixin align_y {
+    @include translate_y(-50%);
+    position: absolute;
+    top: 50%;
+    
+}
+@mixin align_xy {
+    @include translate_xy(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+
+@mixin push($left) {
+    position: relative;
+    right: auto;
+    left: $left;
+}
+@mixin pull($right) {
+    position: relative;
+    right: $right;
+    left: auto;
+}
+@mixin push_n_pull {
+
+    .push-0 {
+        @include push(0);
+    }
+    .pull-0 {
+        @include pull(0);
+    }
+    .push-1 {
+        @include push(8.33333%);
+    }
+    .pull-1 {
+        @include pull(8.33333%);
+    }
+    .push-2 {
+        @include push(16.66667%);
+    }
+    .pull-2 {
+        @include pull(16.66667%);
+    }
+    .push-3 {
+        @include push(25%);
+    }
+    .pull-3 {
+        @include pull(25%);
+    }
+    .push-4 {
+        @include push(33.33333%);
+    }
+    .pull-4 {
+        @include pull(33.33333%);
+    }
+    .push-5 {
+        @include push(41.66667%);
+    }
+    .pull-5 {
+        @include pull(41.66667%);
+    }
+    .push-6 {
+        @include push(50%);
+    }
+    .pull-6 {
+        @include pull(50%);
+    }
+    .push-7 {
+        @include push(58.33333%);
+    }
+    .pull-7 {
+        @include pull(58.33333%);
+    }
+    .push-8 {
+        @include push(66.66667%);
+    }
+    .pull-8 {
+        @include pull(66.66667%);
+    }
+    .push-9 {
+        @include push(75%);
+    }
+    .pull-9 {
+        @include pull(75%);
+    }
+    .push-10 {
+        @include push(83.33333%);
+    }
+    .pull-10 {
+        @include pull(83.33333%);
+    }
+    .push-11 {
+        @include push(91.66667%);
+    }
+    .pull-11 {
+        @include pull(91.66667%);
+    }
+}

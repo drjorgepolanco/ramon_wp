@@ -1,0 +1,114 @@
+html,
+body {
+    @include no_space;
+}
+html {
+    box-sizing: border-box;
+    height: 100%
+}
+body {
+    background-color: #E9E9E9;
+    cursor: auto;
+    position: relative;
+
+    &.hide-overflow {
+        @include fill_parent;
+        overflow: hidden;       
+    }
+}
+* {
+    outline: none;
+
+    &:before, &:after {
+        box-sizing: inherit;
+    }
+}
+
+
+
+a { 
+    text-decoration: none; 
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+button {
+    @include appearance_type;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+img {
+    -ms-interpolation-mode: bicubic;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    y-align: middle;
+}
+
+
+
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email],
+input[type=search],
+input[type=date],
+textarea {
+    outline: none;
+    width: 100%;
+    border: 0;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #999;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+        @include appearance_type;
+        box-shadow: 0 0 5px rgba(204, 204, 204, 1);
+        border:   1px solid rgba(204, 204, 204, 1);        
+    }
+}
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email],
+input[type=search],
+input[type=date] { 
+    height: 40px; 
+}
+textarea {
+    height: auto;
+    min-height: 64px;
+}
+select { 
+    width: 100%; 
+}
+// input[type=text]:focus,
+// input[type=url]:focus,
+// input[type=tel]:focus,
+// input[type=number]:focus,
+// input[type=color]:focus,
+// input[type=email]:focus,
+// input[type=search]:focus,
+// input[type=date]:focus,
+// textarea:focus {
+//     @include appearance_type;
+//     box-shadow: 0 0 5px rgba(204, 204, 204, 1);
+//     border:   1px solid rgba(204, 204, 204, 1); 
+// }
